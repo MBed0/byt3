@@ -5,7 +5,7 @@
 ## Quick Start
 
 ```bash
-# 1. Install dependencies + double click bat file named **Startup.bat**
+# 1. Install dependencies + double click bat file named ```Startup.bat```
 
 # 2. Open terminal and type **byte --setup**
 
