@@ -69,3 +69,5 @@ byte --setup            re-run onboarding
 - Python 3.8+
 - [Ollama](https://ollama.ai) installed and running
 - `pip install flask requests selenium`
+
+ByteLogo.png
