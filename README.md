@@ -1,15 +1,15 @@
 # 👾 Byte — Local AI Assistant
 
-> Powered by Ollama + qwen3:4b | Black/white Claude Code aesthetic
+> Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
 
 ## Quick Start
 
 ```bash
-# 1. Install dependencies + create 'byte' command
-python setup.py
+# 1. Install dependencies + double click bat file named Startup.bat
 
-# 2. Launch (opens browser at http://localhost:7821)
-byte
+# 2. Open terminal and type byte --setup
+
+# 3. Type byte --web for web GUI
 
 # OR: terminal mode
 byte --cmd
@@ -30,7 +30,7 @@ byte --cmd
 
 ```
 Hey Byte, open Chrome
-Hey Byte, text Yezdan Hello
+Hey Byte, text John Hello
 Hey Byte, check my WhatsApp
 Hey Byte, check my Instagram DMs
 Hey Byte, send Discord message to general: I'm here
@@ -41,14 +41,16 @@ Hey Byte, open VS Code
 ## CLI Options
 
 ```bash
-byte                    # Start GUI (auto-opens browser)
-byte --no-browser       # Start server only
-byte --port 8080        # Custom port
-byte --cmd              # Terminal chat mode
-byte --model llama3:8b  # Override model
+ byte                    menu
+byte --cmd              direct chat
+byte --web              web GUI
+byte --quick "Q"        one-shot answer
+byte --model NAME       set model
+byte --port 8080        custom port
+byte --setup            re-run onboarding
 ```
 
-## Integrations Setup
+
 
 ### WhatsApp
 - Requires: `pip install selenium`
