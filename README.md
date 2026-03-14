@@ -11,8 +11,8 @@
 
 # 3. Type byte --web for web GUI
 
-# OR: terminal mode
-byte --cmd
+# OR: terminal mode byte --cmd
+
 ```
 ## News 
 ```bash
