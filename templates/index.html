@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>👾 Byte — AI Assistant</title>
+<title>🐦‍⬛ Byte — AI Assistant</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
@@ -623,7 +623,7 @@
   <!-- Sidebar -->
   <div id="sidebar">
     <div class="sidebar-logo">
-      <span class="logo-emoji" id="logo-emoji">👾</span>
+      <span class="logo-emoji" id="logo-emoji">🐦‍⬛</span>
       <span class="logo-text">Byte</span>
     </div>
 
@@ -745,7 +745,7 @@
       <div id="chat-messages"></div>
       <div id="chat-input-area">
         <div class="input-row">
-          <textarea id="chat-input" placeholder="Message 👾 Byte..." rows="1"
+          <textarea id="chat-input" placeholder="Message 🐦‍⬛ Byte..." rows="1"
             onkeydown="chatKeydown(event)" oninput="autoResize(this)"></textarea>
           <button id="send-btn" onclick="sendMessage()">SEND</button>
         </div>
@@ -835,9 +835,9 @@
               <div class="setting-desc">Byte's avatar emoji (pick any)</div>
             </div>
             <div style="display:flex;gap:8px;align-items:center">
-              <input class="setting-input" id="s-emoji" value="👾" style="width:80px;font-size:20px;text-align:center"/>
+              <input class="setting-input" id="s-emoji" value="🐦‍⬛" style="width:80px;font-size:20px;text-align:center"/>
               <div style="display:flex;gap:4px;flex-wrap:wrap;max-width:180px">
-                <span style="cursor:pointer;font-size:16px" onclick="setEmoji('👾')">👾</span>
+                <span style="cursor:pointer;font-size:16px" onclick="setEmoji('🐦‍⬛')">🐦‍⬛</span>
                 <span style="cursor:pointer;font-size:16px" onclick="setEmoji('🤖')">🤖</span>
                 <span style="cursor:pointer;font-size:16px" onclick="setEmoji('⚡')">⚡</span>
                 <span style="cursor:pointer;font-size:16px" onclick="setEmoji('🦾')">🦾</span>
@@ -1068,7 +1068,7 @@ async function refreshStatus() {
     dashModel.textContent = d.model || '—';
     sidebar.textContent = '▸ ' + (d.model || 'no model');
     if (chatLabel) chatLabel.textContent = 'model: ' + (d.model || '—');
-    document.getElementById('logo-emoji').textContent = d.emoji || '👾';
+    document.getElementById('logo-emoji').textContent = d.emoji || '🐦‍⬛';
     document.getElementById('dash-msgs').textContent = msgCount;
 
     // Integration badges
@@ -1119,7 +1119,7 @@ function appendMsg(role, text, isLoading=false) {
 
   const avatarContent = role === 'user'
     ? (cfg.user_name || 'U').charAt(0).toUpperCase()
-    : (cfg.emoji || '👾');
+    : (cfg.emoji || '🐦‍⬛');
 
   div.innerHTML = `
     <div class="msg-avatar">${avatarContent}</div>
@@ -1320,7 +1320,7 @@ async function loadSettings() {
   const cfg = await r.json();
   document.getElementById('s-botname').value = cfg.bot_name || 'Byte';
   document.getElementById('s-username').value = cfg.user_name || 'User';
-  document.getElementById('s-emoji').value = cfg.emoji || '👾';
+  document.getElementById('s-emoji').value = cfg.emoji || '🐦‍⬛';
   document.getElementById('s-ollama-host').value = cfg.ollama_host || 'http://localhost:11434';
   document.getElementById('s-ollama-path').value = cfg.ollama_path || 'ollama';
   document.getElementById('s-port').value = cfg.port || 7821;
@@ -1452,10 +1452,10 @@ window.addEventListener('load', () => {
       const div = document.createElement('div');
       div.className = 'msg assistant';
       div.innerHTML = `
-        <div class="msg-avatar">👾</div>
+        <div class="msg-avatar">🐦‍⬛</div>
         <div class="msg-content">
           <div class="msg-name">Byte <span class="msg-time">${getTime()}</span></div>
-          <div class="msg-text">👾 Hey! I'm Byte, your local AI assistant. I can:\n\n• Send WhatsApp / Telegram / Discord messages\n• Open Chrome and navigate websites\n• Write and debug code\n• Run system commands\n\nTry: <code>Hey Byte, text Yezdan Hello!</code></div>
+          <div class="msg-text">🐦‍⬛ Hey! I'm Byte, your local AI assistant. I can:\n\n• Send WhatsApp / Telegram / Discord messages\n• Open Chrome and navigate websites\n• Write and debug code\n• Run system commands\n\nTry: <code>Hey Byte, text Yezdan Hello!</code></div>
         </div>`;
       container.appendChild(div);
     }
