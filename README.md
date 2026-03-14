@@ -16,11 +16,11 @@
 ```
 ## News 
 ```bash
-🌎 **100% English GUI**
+🌎 100% English GUI
 
-🤖 **New Ollama model support**
+🤖 New Ollama model support
 
-📉 **Only with 2.734 lines of code**
+📉 Only with 2.734 lines of code
 ```
 ## Features
 
