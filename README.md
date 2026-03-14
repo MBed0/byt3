@@ -7,12 +7,12 @@
 ```bash
 # 1. Install dependencies + double click bat file named ```Startup.bat```
 
-# 2. Open terminal and type ~byte --setup~
+# 2. Open terminal and type byte --setup
 
-# 3. Type ~byte --web~ for web GUI
+# 3. Type byte --web for web GUI
 
 # OR: terminal mode
-~byte --cmd~
+byte --cmd
 ```
 ## News 
 ```bash
