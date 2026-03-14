@@ -3,6 +3,11 @@
 
 # 🐦‍⬛ Byte — Local AI Assistant
 
+![Python](https://img.shields.io/badge/python-3.12-blue)
+![Ollama](https://img.shields.io/badge/Ollama-Local_AI-black)
+![Model](https://img.shields.io/badge/model-qwen3:4b-orange)
+![License](https://img.shields.io/badge/licens
+
 > Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
 
 ## Quick Start
