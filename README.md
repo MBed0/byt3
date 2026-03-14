@@ -1,7 +1,7 @@
 <img src="Byte.png" alt="Alt text" width="700"/>
 
 
-# 👾 Byte — Local AI Assistant
+# 🐦‍⬛ Byte — Local AI Assistant
 
 > Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
 
