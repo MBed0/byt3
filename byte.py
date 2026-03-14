@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-👾 Byte v3.1 — Local AI Assistant
+🐦‍⬛ Byte v3.1 — Local AI Assistant
 """
 import sys, os, argparse, time, subprocess, json, datetime, re, threading
 from pathlib import Path
@@ -85,7 +85,7 @@ else:
 
 def _render_menu_lines(items, sel, header_lines, search, cfg=None):
     """Build list of display lines without printing."""
-    bot = cfg.get("emoji","👾")+" "+cfg.get("bot_name","Byte") if cfg else "👾 Byte"
+    bot = cfg.get("emoji","🐦‍⬛")+" "+cfg.get("bot_name","Byte") if cfg else "🐦‍⬛ Byte"
     lines = []
     lines.append("")
     lines.append(f"  {bold(bot)}  {dim('v'+VERSION)}  {tag('AI')}")
@@ -387,7 +387,7 @@ def run_onboarding():
     cfg["user_name"] = name
     bot  = input(f"  {hi('Bot name')} {dim('(default: Byte)')} › ").strip() or "Byte"
     cfg["bot_name"] = bot
-    emojis = ["👾","🤖","⚡","🧠","🔥","💡","🎯","🦾"]
+    emojis = ["🐦‍⬛","🤖","⚡","🧠","🔥","💡","🎯","🦾"]
     print(f"\n  {dim('Pick an emoji:')}\n")
     for i, e in enumerate(emojis): print(f"   {dim(str(i+1)+'.')} {e} ", end="  ")
     print()
@@ -452,7 +452,7 @@ def run_onboarding():
     main_menu()
 
 def _ob_hdr(step, total, title):
-    print(f"\n  {bold('👾 Setup')}  {dim(f'Step {step}/{total}')}  {hi(title)}")
+    print(f"\n  {bold('🐦‍⬛ Setup')}  {dim(f'Step {step}/{total}')}  {hi(title)}")
     print(f"  {ok('▓'*step)}{dim('░'*(total-step))}")
     print(f"  {line()}\n")
 
@@ -466,7 +466,7 @@ def main_menu():
     models  = list_local_models() if running else []
     model   = cfg.get("model","?")
     user    = cfg.get("user_name","User")
-    bot     = cfg.get("emoji","👾")+" "+cfg.get("bot_name","Byte")
+    bot     = cfg.get("emoji","🐦‍⬛")+" "+cfg.get("bot_name","Byte")
     st      = ok("● online") if running else err("○ offline")
 
     header = [
@@ -509,7 +509,7 @@ def main_menu():
 
 def _quit():
     clear()
-    print(f"\n  {dim('👾 bye!')}\n")
+    print(f"\n  {dim('🐦‍⬛ bye!')}\n")
     print(C.SHOW_CURSOR, end="", flush=True)
     sys.exit(0)
 
@@ -611,7 +611,7 @@ def settings_menu():
     from byte_core import load_config, save_config
     cfg = load_config()
     editable = [
-        ("bot_name","Bot name","👾"),("user_name","Your name","👤"),
+        ("bot_name","Bot name","🐦‍⬛"),("user_name","Your name","👤"),
         ("emoji","Bot emoji","✨"),("model","Active model","◆"),
         ("ollama_host","Ollama host","🔗"),("ollama_path","Ollama binary","📁"),
         ("port","Web port","🌐"),("theme","Theme","🎨"),
@@ -690,7 +690,7 @@ def quick_ask():
                                 weather_ctx=_weather_context()):
             if first:
                 sp.stop()
-                print(f"  {c(C.GREEN,'👾')} ", end="", flush=True)
+                print(f"  {c(C.GREEN,'🐦‍⬛')} ", end="", flush=True)
                 first = False
             print(tok, end="", flush=True)
     except KeyboardInterrupt:
@@ -717,7 +717,7 @@ def run_chat(initial_model=None):
             print(f"  {c(C.BLUE,'You')} {dim('›')} ", end="", flush=True)
             user_input = input().strip()
         except (KeyboardInterrupt, EOFError):
-            print(f"\n\n  {dim('👾 bye!')}\n")
+            print(f"\n\n  {dim('🐦‍⬛ bye!')}\n")
             print(C.SHOW_CURSOR, end="", flush=True)
             sys.exit(0)
         if not user_input: continue
@@ -727,7 +727,7 @@ def run_chat(initial_model=None):
             arg = pts[1] if len(pts)>1 else ""
 
             if cmd in ("/bye","/exit","/quit","exit","quit"):
-                print(f"\n  {dim('👾 bye!')}\n")
+                print(f"\n  {dim('🐦‍⬛ bye!')}\n")
                 print(C.SHOW_CURSOR, end="", flush=True)
                 sys.exit(0)
             elif cmd == "/menu":   return main_menu()
@@ -770,7 +770,7 @@ def run_chat(initial_model=None):
             elif cmd == "/copy":     _copy_last(history)
             elif cmd == "/summarize":
                 if history:
-                    print(f"\n  {c(C.GREEN,cfg.get('emoji','👾'))} ", end="", flush=True)
+                    print(f"\n  {c(C.GREEN,cfg.get('emoji','🐦‍⬛'))} ", end="", flush=True)
                     sumq = [{"role":"user","content":"Summarize this conversation in 3 bullets."}]
                     for tok in chat_stream(history+sumq): print(tok, end="", flush=True)
                     print("\n")
@@ -794,7 +794,7 @@ def run_chat(initial_model=None):
 
 def _do_stream(cfg, history, chat_stream, run_actions, user_input):
     history.append({"role":"user","content":user_input})
-    emoji = cfg.get("emoji","👾")
+    emoji = cfg.get("emoji","🐦‍⬛")
 
     print()
     sp = ThinkingSpinner(); sp.start()
@@ -823,7 +823,7 @@ def _do_stream(cfg, history, chat_stream, run_actions, user_input):
 
 def _chat_hdr(cfg):
     clear()
-    print(f"\n  {bold(cfg.get('emoji','👾')+' '+cfg.get('bot_name','Byte'))}  {dim('·')}  {hi(cfg.get('model','?'))}")
+    print(f"\n  {bold(cfg.get('emoji','🐦‍⬛')+' '+cfg.get('bot_name','Byte'))}  {dim('·')}  {hi(cfg.get('model','?'))}")
     print(f"  {line()}")
     print(f"  {dim('/help  /model  /models  /clear  /save  /export  /copy  /weather  /web  /menu  /bye')}")
     if WEATHER_CACHE.exists():
@@ -871,7 +871,7 @@ def _export_md(history):
     with open(path,"w",encoding="utf-8") as f:
         f.write(f"# Byte Chat\n_{datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}_\n\n")
         for m in history:
-            role = "**You**" if m["role"]=="user" else "**👾 Byte**"
+            role = "**You**" if m["role"]=="user" else "**🐦‍⬛ Byte**"
             f.write(f"{role}\n\n{m['content']}\n\n---\n\n")
     print(f"\n  {ok('✓')} Exported → {bold(str(path))}\n")
 
@@ -921,7 +921,7 @@ def _copy_last(history):
 def show_help():
     clear()
     print(f"""
-  {bold('👾 Byte — Help')}
+  {bold('🐦‍⬛ Byte — Help')}
   {line()}
 
   {bold('CLI')}
@@ -963,7 +963,7 @@ def main():
     parser.add_argument("--help","-h", action="store_true")
     args = parser.parse_args()
 
-    if args.version: print(f"👾 Byte v{VERSION}"); return
+    if args.version: print(f"🐦‍⬛ Byte v{VERSION}"); return
     if args.help:    show_help(); return
     if args.model:
         from byte_core import load_config, save_config
@@ -972,7 +972,7 @@ def main():
     if args.quick:
         from byte_core import load_config, ollama_running, start_ollama, chat_stream
         if not ollama_running(): start_ollama()
-        print("\n👾 ", end="", flush=True)
+        print("\n🐦‍⬛ ", end="", flush=True)
         for tok in chat_stream([{"role":"user","content":args.quick}],
                                 weather_ctx=_weather_context()):
             print(tok, end="", flush=True)
