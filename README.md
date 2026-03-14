@@ -70,4 +70,4 @@ byte --setup            re-run onboarding
 - [Ollama](https://ollama.ai) installed and running
 - `pip install flask requests selenium`
 
-ByteLogo.png
+## Only with 2.734 lines of code
