@@ -1,5 +1,5 @@
 """
-👾 Byte — Flask Web Server
+🐦‍⬛ Byte — Flask Web Server
 Run: python app.py  OR  byte
 """
 import json, sys, threading, time
@@ -170,10 +170,10 @@ def run_server(port=None, open_browser=True):
     port = port or cfg.get("port", 7821)
 
     if cfg.get("auto_start_ollama") and not ollama_running():
-        print("👾 Starting Ollama...")
+        print("🐦‍⬛ Starting Ollama...")
         start_ollama()
 
-    print(f"\n👾 Byte is running at: http://localhost:{port}")
+    print(f"\n🐦‍⬛ Byte is running at: http://localhost:{port}")
     print("   Press Ctrl+C to stop\n")
 
     if open_browser:
