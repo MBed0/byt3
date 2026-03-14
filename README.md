@@ -15,13 +15,13 @@
 **byte --cmd**
 ```
 ## News 
-'''bash
+```bash
 🌎 **100% English GUI**
 
 🤖 **New Ollama model support**
 
 📉 **Only with 2.734 lines of code**
-'''
+```
 ## Features
 
 | Feature | Description |
