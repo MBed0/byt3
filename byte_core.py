@@ -1,5 +1,5 @@
 """
-👾 Byte Core — Ollama connection + Action Engine
+🐦‍⬛ Byte Core — Ollama connection + Action Engine
 """
 import json, re, subprocess, sys, os, datetime, requests, webbrowser
 from pathlib import Path
