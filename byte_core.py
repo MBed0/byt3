@@ -7,9 +7,48 @@ from pathlib import Path
 BASE        = Path(__file__).parent
 CONFIG_PATH = BASE / "config.json"
 
+DEFAULT_CONFIG = {
+    "bot_name": "Byte",
+    "emoji": "🐦‍⬛",
+    "model": "gemma3:1b",
+    "ollama_path": "ollama",
+    "ollama_host": "http://localhost:11434",
+    "theme": "dark",
+    "user_name": "User",
+    "port": 7821,
+    "contacts": {},
+    "api_keys": {
+        "discord_token": "",
+        "discord_webhook": "",
+        "telegram_token": "",
+        "telegram_chat_id": ""
+    },
+    "chrome_path": "",
+    "whatsapp_profile": "./whatsapp_session",
+    "auto_start_ollama": True,
+    "dataset_path": "./datasets/byte_dataset.jsonl",
+    "system_prompt": "You are Byte, an advanced local AI assistant. Be direct, efficient, and helpful. Keep responses concise unless explaining code. Always respond in the same language the user writes in.\n\nACTION RULES: ONLY use action tags like [ACTION: OPEN_URL|...] when the user explicitly asks to perform that action. For normal conversation, respond with plain text only."
+}
+
 def load_config():
+    if not CONFIG_PATH.exists():
+        save_config(DEFAULT_CONFIG)
+        return dict(DEFAULT_CONFIG)
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+        cfg = json.load(f)
+    # Fill in any missing keys from defaults
+    changed = False
+    for k, v in DEFAULT_CONFIG.items():
+        if k not in cfg:
+            cfg[k] = v
+            changed = True
+    if changed:
+        save_config(cfg)
+    return cfg
+
+def save_config(cfg):
+    with open(CONFIG_PATH, "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=2, ensure_ascii=False)
 
 def save_config(cfg):
     with open(CONFIG_PATH, "w", encoding="utf-8") as f:
