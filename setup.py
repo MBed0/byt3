@@ -1,5 +1,5 @@
 """
-Byte v3.0 - Setup & Installation
+Byte v3.1 - Setup & Installation
 """
 import subprocess, sys, os, platform
 from pathlib import Path
