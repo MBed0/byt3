@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🐦‍⬛ Byte v3.1 — Local AI Assistant
+🐦‍⬛ Byte v3.2 — Local AI Assistant
 """
 import sys, os, argparse, time, subprocess, json, datetime, re, threading
 from pathlib import Path
