@@ -2,7 +2,7 @@
 
 
 # 🐦‍⬛ Byte — Local AI Assistant
-
+PyPI  Downloads  Python License  Feishu  WeChat Discord
 > Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
 
 ## Quick Start
