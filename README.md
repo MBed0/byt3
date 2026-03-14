@@ -19,11 +19,15 @@ OR: terminal mode byte --cmd
 ```
 ## News 
 ```bash
-🌎 100% English GUI
+🌍 Full English GUI
 
 🤖 New Ollama model support
 
-📉 Only with 2.734 lines of codel
+📉 Lightweight architecture
+
+⛅ Weather viewing added
+
+🧠 Faster startup
 ```
 ## Features
 
