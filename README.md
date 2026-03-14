@@ -1,4 +1,4 @@
-<img src="Byte.jpeg" alt="Alt text" width="300"/>
+<img src="Byte.png" alt="Alt text" width="300"/>
 
 
 # 👾 Byte — Local AI Assistant
