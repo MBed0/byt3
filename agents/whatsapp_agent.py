@@ -1,4 +1,4 @@
-"""👾 Byte — WhatsApp Agent"""
+"""🐦‍⬛ Byte — WhatsApp Agent"""
 import json, time
 from pathlib import Path
 
