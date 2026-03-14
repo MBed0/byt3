@@ -14,6 +14,8 @@
 # OR: terminal mode
 **byte --cmd**
 ```
+## News 
+**100% English GUI 
 
 ## Features
 
