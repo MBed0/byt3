@@ -16,7 +16,7 @@ from byte_core import (
 )
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
-app.secret_key = "byte-secret-2024"
+app.secret_key = "byte-secret-2026" # Change that
 
 chat_sessions = {}  # session_id -> list of messages
 
