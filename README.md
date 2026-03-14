@@ -1,3 +1,6 @@
+<img src="Byte.jpeg" alt="Alt text" width="300"/>
+
+
 # 👾 Byte — Local AI Assistant
 
 > Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
