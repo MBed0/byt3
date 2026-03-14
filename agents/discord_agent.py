@@ -1,4 +1,4 @@
-"""👾 Byte — Discord Agent"""
+"""🐦‍⬛ Byte — Discord Agent"""
 import json, requests
 from pathlib import Path
 
