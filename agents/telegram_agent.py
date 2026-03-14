@@ -1,4 +1,4 @@
-"""👾 Byte — Telegram Agent"""
+"""🐦‍⬛ Byte — Telegram Agent"""
 import json, requests
 from pathlib import Path
 
