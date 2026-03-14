@@ -9,7 +9,7 @@ echo.
 
 python --version >nul 2>&1
 if errorlevel 1 (
-    echo [HATA] Python Not Available!
+    echo [ERROR] Python Not Available!
     echo Downoald Python: https://www.python.org/downloads/
     echo Tick the "Add Python to PATH" option 
 
