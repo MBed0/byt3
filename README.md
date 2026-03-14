@@ -28,6 +28,8 @@ OR: terminal mode byte --cmd
 ⛅ Weather viewing added
 
 🧠 Faster startup
+
+📸 No More 👾
 ```
 ## Features
 
