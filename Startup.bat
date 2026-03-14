@@ -28,7 +28,7 @@ echo  ┌───────────────────────�
 echo  │  StartUp Completed !                 │
 echo  │                                      │
 echo  │  Close this window and │ echo        │ 
-echo  |  open a new CMD, type: byte            |
+echo  |  open a new CMD, type: byte          |
 echo  └──────────────────────────────────────┘
 echo.
 pause
