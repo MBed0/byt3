@@ -9,13 +9,14 @@ echo.
 
 python --version >nul 2>&1
 if errorlevel 1 (
-    echo [HATA] Python bulunamadi!
-    echo Python yukle: https://www.python.org/downloads/
-    echo Kurulurken "Add Python to PATH" secenegini isaretle!
+    echo [HATA] Python Not Available!
+    echo Downoald Python: https://www.python.org/downloads/
+    echo Tick the "Add Python to PATH" option 
+
     pause & exit /b 1
 )
 
-echo [1/2] Kurulum basliyor...
+echo [1/2]  StartingUp...
 python "%~dp0setup.py"
 
 echo.
@@ -24,10 +25,10 @@ python "%~dp0byte.py" --version
 
 echo.
 echo  ┌──────────────────────────────────────┐
-echo  │  Kurulum tamamlandi!                 │
+echo  │  StartUp Completed !                 │
 echo  │                                      │
-echo  │  Bu pencereyi KAPAT ve               │
-echo  │  yeni bir CMD ac, yaz: byte          │
+echo  │  Close this window and │ echo        │ 
+echo  |  open a new CMD, type: byte            |
 echo  └──────────────────────────────────────┘
 echo.
 pause
