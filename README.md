@@ -48,7 +48,8 @@ Hey Byte, open VS Code
 ## CLI Options
 
 ```bash
- byte                    menu
+ 
+byte                    menu
 byte --cmd              direct chat
 byte --web              web GUI
 byte --quick "Q"        one-shot answer
