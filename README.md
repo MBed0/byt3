@@ -15,7 +15,9 @@
 **byte --cmd**
 ```
 ## News 
-**100% English GUI 
+🌎 **100% English GUI**
+
+🤖 **New Ollama model support**
 
 ## Features
 
