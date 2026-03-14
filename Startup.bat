@@ -3,7 +3,7 @@ title Byte Kurulum
 color 0F
 echo.
 echo  ┌─────────────────────────┐
-echo  │   Byte StartUp v1.0     │
+echo  │Byte StartUp Wizard v1.2 │
 echo  └─────────────────────────┘
 echo.
 
