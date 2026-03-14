@@ -7,7 +7,7 @@ from pathlib import Path
 
 BASE = Path(__file__).parent
 sys.path.insert(0, str(BASE))
-VERSION = "3.1.0"
+VERSION = "3.2.0"
 
 # ── Windows UTF-8 + ANSI ──────────────────────────────────────────────────────
 if sys.platform == "win32":
