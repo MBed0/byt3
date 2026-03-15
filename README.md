@@ -1,7 +1,7 @@
 <img src="Byte.png" alt="Alt text" width="700"/>
 
 
-# 🐦‍⬛ Byte — Local AI Assistant
+# 🐦‍⬛ Byte — Personal AI Assistant
 
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![Ollama](https://img.shields.io/badge/Ollama-Local_AI-black)
