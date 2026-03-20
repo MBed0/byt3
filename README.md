@@ -7,7 +7,7 @@
 ![Ollama](https://img.shields.io/badge/Ollama-Local_AI-black)
 ![Model](https://img.shields.io/badge/model-qwen3:4b-orange)
 ![Model](https://img.shields.io/badge/model-byt3:coder-orange)
-
+![Model](https://img.shields.io/badge/model-gemma3:1b-red)
 > Powered by Ollama + qwen3:4b or other models | Black/white Claude Code aesthetic
 
 ## Quick Start
