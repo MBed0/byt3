@@ -35,6 +35,8 @@ OR: terminal mode byte --cmd
 🧠 Faster startup
 
 👾 No More 
+
+🦅 Byt3:Coder 🤫
 ```
 ## Features
 
