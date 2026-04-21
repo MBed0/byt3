@@ -1,4 +1,4 @@
-<img src="IMG_4867.png" alt="Alt text" width="700"/>
+<img src="Byte.png" alt="Alt text" width="700"/>
 
 
 # 🐦‍⬛ Byte — Personal AI Assistant
